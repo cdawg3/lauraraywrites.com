@@ -223,7 +223,7 @@ nav {
 
 @keyframes words {
     0%,20% {
-        content: "Freelancer";
+        content: "Storyteller";
     }
     21%,40% {
         content: "Content Writer";
@@ -317,7 +317,8 @@ nav {
     border-bottom: 2px solid #f9a826; */
     /* border-top-right-radius: 15px; */
     padding: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 0;
+    /* margin-bottom: 100px; */
 }
 
 .carousel-card {
@@ -596,6 +597,29 @@ ion-icon {
     .navbar-brand img {
         width: 80px;
         height: 80px;
+    }
+
+    .sectional {
+        margin-bottom: 0;
+    }
+
+    .carousel-card {
+        width: 90%;
+        /* make the width relative to the viewport */
+        height: 550px;
+        /* adjust the height as necessary */
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
+
+    .portfolio-card {
+        margin-top: 0;
+    }
+
+    .portfolio-card div {
+        margin-top: 0;
     }
 
     footer {
