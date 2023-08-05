@@ -1,0 +1,613 @@
+body {
+    background-color: #091727;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+nav {
+    border-bottom: 2px solid #f9a826;
+    background: #0f2742;
+    /* height: 70px; */
+}
+
+.hidden {
+    display: none;
+}
+
+.icon-spacing {
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    position: relative;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-35%);
+    width: 120px;
+    /* Set the size you want here */
+    height: auto;
+}
+
+.linky {
+    color: white;
+}
+
+.nav-link:hover {
+    /* background-color: #f9a826; */
+    color: #f9a826;
+}
+
+/* .testimonial {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 100px;
+    width: 100px;
+} */
+
+.btn.fill-on-hover {
+    border: 2px solid #f9a826;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #f9a826;
+    transition: background-color 0.5s ease-out, color 0.5s ease-out;
+    /* line-height: 1; */
+}
+
+.btn.fill-on-hover ion-icon {
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.btn.fill-on-hover:hover {
+    background-color: #f9a826;
+    color: #091727;
+    /* border: none; */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    border-bottom: 2px solid #f9a826;
+    padding-bottom: none;
+    /* border-bottom-right-radius: 50%; */
+}
+
+.hero img {
+    border: 2px solid #f9a826;
+}
+
+.hero::before {
+    content: "";
+    background: url("../images/Laura-Hero-1.png") no-repeat center center;
+    background-size: cover;
+    /* filter: blur(0px); */
+    filter: brightness(0.5);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.underline-text {
+    position: relative;
+    display: inline-block;
+}
+
+.underline-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    /* Change this value to adjust the thickness of the underline */
+    width: 87%;
+    background-color: #f9a826;
+}
+
+/* Services Section */
+/* .card-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+} */
+
+.card {
+    background: linear-gradient(45deg,
+            #122f4f 0%,
+            #0f2742 50%,
+            #0c1f34 50%,
+            #091727 100%);
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    border: 2px solid #f9a826;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+}
+
+.icon-container {
+    position: absolute;
+    top: -56px;
+    /* increase top value */
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    background-color: #091727;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 0 0 0 2px #f9a826;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa {
+    font-size: 48px;
+    color: #f9a826;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    /* Add padding to push the content down below the icon container */
+}
+
+/* Text Animation Section */
+.animated-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    border-radius: 10px;
+}
+
+.animated-text span {
+    position: relative;
+}
+
+.animated-text span::before {
+    content: "";
+    color: #f9a826;
+    animation: words 20s infinite;
+    border-radius: 10px;
+}
+
+.animated-text span::after {
+    content: "";
+    background-color: #091727;
+    /* border-radius: 10px; */
+    position: absolute;
+    width: calc(100px + 8px);
+    height: 110%;
+    border-left: 2px solid #f9a826;
+    right: -10px;
+    animation: cursor .6s infinite, typing 20s steps(14) infinite;
+    /* animation: cursor .6s infinite, typing 20s steps(14, end) infinite; */
+}
+
+/* #091727 new color */
+/* #2f3542 old color */
+
+.animated-text p {
+    border-radius: 10px;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid #091727;
+    }
+}
+
+@keyframes words {
+    0%,20% {
+        content: "Freelancer";
+    }
+    21%,40% {
+        content: "Content Writer";
+    }
+    41%,60% {
+        content: "Copywriter";
+    }
+    61%,80% {
+        content: "Book Reviewer";
+    }
+    81%,100% {
+        content: "Ghostwriter";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
+        width: 0;
+    }
+    0%,5%,20%,25%,40%,45%,60%,65%,80%,85% {
+        width: calc(100% + 10px);
+    }
+}
+
+/* Diagonals Undecided Section */
+.wrapper {
+    max-width: 50rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.sectional {
+    /* padding: 2rem 0; */
+    padding-block: 5rem;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.diagonal {
+    position: relative;
+    isolation: isolate;
+}
+
+.diagonal::after {
+    content: "";
+    background-image: linear-gradient(45deg,
+                #122f4f,
+                #0f2742,
+                #0c1f34);
+                /* #091727); */
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transform: skewY(-3deg);
+    border-top: 2px solid #f9a826;
+    border-bottom: 2px solid #f9a826;
+}
+
+/* Wavy is actually the second diagonal */
+.wavy {
+    position: relative;
+    isolation: isolate;
+}
+
+.wavy::after {
+    content: "";
+    background-image: linear-gradient(45deg,
+                /* #122f4f,  */
+                #0c1f34, 
+                #0f2742,
+                #122f4f);
+                /* #0c1f34); */
+                /* #091727); */
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transform: skewY(3deg);
+    border-top: 2px solid #f9a826;
+    border-bottom: 2px solid #f9a826;
+}
+
+/* Testimonial Section */
+
+.carousel-border {
+    /* border-top: 2px solid #f9a826;
+    border-bottom: 2px solid #f9a826; */
+    /* border-top-right-radius: 15px; */
+    padding: 30px;
+    margin-bottom: 100px;
+}
+
+.carousel-card {
+    position: relative;
+    background: linear-gradient(45deg,
+                #122f4f 0%,
+                #0f2742 50%,
+                #0c1f34 50%,
+                #091727 100%);
+    color: #fff;
+    /* padding: 10px 20px; */
+    padding: 0 20px 20px 20px;
+    width: 600px;
+    height: 350px;
+    border: 2px solid #f9a826;
+    border-radius: 15px;
+}
+
+.carousel-card .card-title {
+    margin-bottom: 20px;
+    /* This adds space between the title and the text */
+}
+
+.testimonials-title {
+    /* color: #f9a826; */
+    font-size: 48px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+/* .testimonials-title::after {
+    content: '';
+    position: absolute;
+    left: 42%;
+    right: 42%;
+    bottom: 0;
+    height: 4px;
+    background: #f9a826;
+} */
+
+.testimonials-subtitle {
+    /* color: #f9a826; */
+    margin-bottom: 40px;
+    /* You can adjust this to add more space between the subtitle and the carousel */
+}
+
+.quote-icon-top {
+    position: absolute;
+    top: 5%;
+    /* Adjust these values as needed */
+    left: 5%;
+    font-size: 3em;
+    /* Make the quote icon larger */
+    opacity: 0.5;
+    /* Make the quote icon semi-transparent */
+    color: #f9a826;
+}
+
+.quote-icon-bottom {
+    position: absolute;
+    bottom: 5%;
+    /* Adjust these values as needed */
+    right: 5%;
+    font-size: 3em;
+    /* Make the quote icon larger */
+    opacity: 0.5;
+    /* Make the quote icon semi-transparent */
+    color: #f9a826;
+}
+
+/* .carousel-card::before {
+    content: "”";
+    font-size: 7em;
+    position: absolute;
+    top: 5%;
+    left: -10%;
+    color: #f9a826;
+}
+
+.carousel-card::after {
+    content: "”";
+    font-size: 7em;
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
+    color: #f9a826;
+} */
+
+/* Testimonial End */
+
+.portfolio-card {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    /* background: #122f4f; */
+    /* background: linear-gradient(45deg,
+                #122f4f 0%,
+                #0c1f34 50%,
+                #091727 100%); */
+    background: linear-gradient(45deg,
+                #122f4f 0%,
+                #0f2742 50%,
+                #0c1f34 50%,
+                #091727 100%);
+    padding-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    border: 2px solid #f9a826;
+}
+
+.portfolio-card #ribbon {
+    position: absolute;
+    top: 40px;
+    left: -20px;
+    width: 380px;
+    height: 60px;
+    background: #f9a826;
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+}
+
+.portfolio-card #ribbon::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    /* left: 5px; */
+    width: 20px;
+    height: 40px;
+    background: #ae761b;
+    /* background: #c7861e; */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: 2;
+}
+
+.portfolio-card #ribbon::after {
+    content: "";
+    position: absolute;
+    top: 60px;
+    /* left: 5px; */
+    width: 20px;
+    height: 20px;
+    background: #f9a826;
+}
+
+.portfolio-card h4 {
+    position: absolute;
+    top: 55px;
+    left: 70px;
+    font-size: 1.5rem;
+    color: #fff;
+    z-index: 3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-card div {
+    /* position: absolute; */
+    width: 300px;
+    height: 300px;
+    /* background: white; */
+    /* border: 2px solid white; */
+    margin-top: 50px;
+    margin-inline: auto;
+}
+
+#portfolio-btn {
+    border: 2px solid #f9a826;
+    /* same as background color */
+    background-color: transparent;
+    color: #f9a826;
+    /* same as border color */
+    transition: background-color 0.5s ease-out, color 0.5s ease-out;
+    /* animate background-color and color properties over 0.5 seconds */
+}
+
+#portfolio-btn:hover {
+    background-color: #f9a826;
+    color: #ffffff;
+    /* border: none; */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.btn-float {
+  animation: float 2s ease-in-out infinite;
+}
+
+#light-blue {
+    border-top: 2px solid #f9a826;
+    background: #122f4f;
+}
+
+/* Website Modal Section */
+.websiteModal {
+    background: linear-gradient(45deg,
+                #122f4f 0%,
+                #0f2742 50%,
+                #0c1f34 50%,
+                #091727 100%);
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #0f2742;
+    border-top: 2px solid #f9a826;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.icon-row {
+    display: flex;
+    align-items: center;
+}
+
+.social-media-icons a {
+    margin: 0 10px;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.foot-btn {
+    text-align: right;
+}
+
+.buy-website-btn {
+    color: #f9a826;
+    text-decoration: none;
+    border: 1px solid #f9a826;
+    border-radius: 15px;
+    padding: 10px 15px;
+    display: inline-block;
+    /* margin-top: 15px; */
+}
+
+.buy-website-btn:hover {
+    background-color: #f9a826;
+    color: #091727;
+}
+
+ion-icon {
+    font-size: 24px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 912px) {
+    nav {
+        text-align: right;
+    }
+
+    .navbar {
+        padding-right: 15px;
+    }
+
+    .navbar-brand img {
+        width: 80px;
+        height: 80px;
+    }
+
+    footer {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .foot-btn {
+        text-align: center;
+        margin-top: 10px;
+    }
+}

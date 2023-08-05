@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link type="text/css" rel="stylesheet" href="styles/index.css" />
+    <link rel="icon" href="./images/Laura-AI-1-removebg-preview.png" />
+    <title>Laura Ray Writes</title>
+  </head>
+
+  <style></style>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Navbar Section -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <img
+            class="d-md-inline"
+            src="./images/Laura-AI-1-removebg-preview.png"
+            alt="Laura Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link linky" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link linky" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link linky" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link linky" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact">
+                <button
+                  class="btn fill-on-hover"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                >
+                  Reach Out
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Other Navbar -->
+    <!-- <nav
+      id="navbar"
+      class="navbar fixed-top navbar-expand-lg navbar-dark"
+      style="background: #091727"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <img
+            class="d-none d-md-inline"
+            src="./images/Laura-AI-1-removebg-preview.png"
+            alt="Laura Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home"
+                ><span class="text">Home</span
+                ><span class="icon hidden icon-spacing"
+                  ><ion-icon name="home-outline" size="large"></ion-icon></span
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services"
+                ><span class="text">Services</span
+                ><span class="icon hidden icon-spacing"
+                  ><ion-icon
+                    name="briefcase-outline"
+                    size="large"
+                  ></ion-icon></span
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects"
+                ><span class="text">Projects</span
+                ><span class="icon hidden icon-spacing"
+                  ><ion-icon
+                    name="person-outline"
+                    size="large"
+                  ></ion-icon></span
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio"
+                ><span class="text">Portfolio</span
+                ><span class="icon hidden icon-spacing"
+                  ><ion-icon
+                    name="download-outline"
+                    size="large"
+                  ></ion-icon></span
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="#contact"
+                data-bs-toggle="modal"
+                data-bs-target="#contactModal"
+              >
+                <button class="btn fill-on-hover" type="button">
+                  Contact Me
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+
+    <div id="home"></div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div
+          class="modal-content text-shadow"
+          style="
+            background: linear-gradient(
+              45deg,
+              #122f4f 0%,
+              #0f2742 50%,
+              #0c1f34 50%,
+              #091727 100%
+            );
+          "
+        >
+          <div class="modal-header">
+            <h5 class="modal-title text-white" id="contactModalLabel">
+              Contact Me
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label text-white">Name</label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label text-white"
+                  >Email address</label
+                >
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="service" class="form-label text-white"
+                  >Service</label
+                >
+                <select class="form-select" id="service">
+                  <option selected>Choose...</option>
+                  <option value="ghostwriting">Ghostwriting</option>
+                  <option value="copyrighting">Copyrighting</option>
+                  <option value="beta_reading">Beta Reading</option>
+                  <option value="notary">Notary</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label text-white"
+                  >Message</label
+                >
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn"
+              style="background-color: #f9a826"
+              onclick="sendMail()"
+            >
+              <!-- <button
+              type="button"
+              class="btn"
+              style="background-color: #f9a826"
+              onclick="sendMail()"
+            > -->
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div
+      class="hero text-shadow text-white text-center d-flex flex-column align-items-center justify-content-center"
+    >
+      <img
+        src="images/Laura-HeadHeadshot.jpg"
+        class="rounded-circle mb-3"
+        alt="Profile Picture"
+        style="width: 250px; height: 250px; object-fit: cover"
+      />
+      <h1>My name is <span class="underline-text">Laura Ray</span></h1>
+      <div class="animated-text">
+        I'm a
+        <p style="background-color: #091727"><span></span></p>
+      </div>
+      <!-- <button class="btn" style="background: #f9a826; margin-bottom: 0;">Work With Me</button> -->
+    </div>
+
+    <!-- Divider Section -->
+    <div id="services"></div>
+    <div style="height: 75px; background-color: #091727"></div>
+
+    <!-- Service Card Section -->
+    <!-- <div id="services"></div> -->
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5 mt-5">
+          <div class="card">
+            <div class="icon-container">
+              <i class="fa fa-pen-to-square"></i>
+            </div>
+            <div class="card-body text-shadow">
+              <h3 class="card-title">Content Writing</h3>
+              <h6 class="card-text">
+                Intentional and necessary compilations of sentences written by a
+                wordsmith.
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5 mt-5">
+          <div class="card">
+            <div class="icon-container">
+              <i class="fa fa-book-open-reader"></i>
+            </div>
+            <div class="card-body text-shadow">
+              <h4 class="card-title">Copywriting</h4>
+              <p class="card-text">
+                Marketable and persuasive clusters of words assured to spark
+                action.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5 mt-5">
+          <div class="card">
+            <div class="icon-container">
+              <i class="fa fa-signature"></i>
+            </div>
+            <div class="card-body text-shadow">
+              <h4 class="card-title">Manuscript Reviews</h4>
+              <p class="card-text">
+                Constructive reviews conducted by a meticulous bookworm purposed
+                to elevate your stories.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-5 mt-5">
+          <div class="card">
+            <div class="icon-container">
+              <i class="fa fa-signature"></i>
+            </div>
+            <div class="card-body text-shadow">
+              <h4 class="card-title">Ghostwriting</h4>
+              <p class="card-text">
+                Captured thoughts and leveraged potential as guided by an
+                invisible stand-in.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container mt-5 card-contain">
+      <div class="row justify-content-center">
+        <div class="col-md-6 mb-5 mt-5">
+          <div class="card">
+            <div class="icon-container">
+              <i class="fa fa-pen-to-square"></i>
+            </div>
+            <div class="card-body text-shadow">
+              <h3 class="card-title">Copywriting</h3>
+              <h6 class="card-text">
+                Create sellable copy that mirrors your brand's voice by working
+                with an ardent writesmith.
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-5 mt-5">
+          <div class="card">
+            <div class="icon-container">
+              <i class="fa fa-book-open-reader"></i>
+            </div>
+            <div class="card-body text-shadow">
+              <h4 class="card-title">Beta Reading</h4>
+              <p class="card-text">
+                elevate your story by allowing a meticulous bookworm to review
+                your first draft or final manuscript.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6 mb-5 mt-5">
+          <div class="card">
+            <div class="icon-container">
+              <i class="fa fa-pen-to-square"></i>
+            </div>
+            <div class="card-body text-shadow">
+              <h3 class="card-title">Copywriting</h3>
+              <h6 class="card-text">
+                Create sellable copy that mirrors your brand's voice by working
+                with an ardent writesmith.
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-5 mt-5">
+          <div class="card">
+            <div class="icon-container">
+              <i class="fa fa-book-open-reader"></i>
+            </div>
+            <div class="card-body text-shadow">
+              <h4 class="card-title">Beta Reading</h4>
+              <p class="card-text">
+                elevate your story by allowing a meticulous bookworm to review
+                your first draft or final manuscript.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Divider Section -->
+    <div id="about"></div>
+    <!-- <div class="mb-5" style="height: 75px; background-color: #091727"></div> -->
+
+    <!-- Project Section -->
+    <section class="diagonal sectional">
+      <div class="wrapper">
+        <h2 class="section-title">About Me</h2>
+        <p>
+          <!-- Hello there! I’m a multi-passionate person who has developed a work
+          life that embodies just that. I have a flair for words and a knack for
+          stringing them together. I work with businesses, individuals, and
+          authors across a wide range of topics within the e-commerce niche and
+          the wild world of storytelling. -->
+          Hi there! I’m Laura-Ray. I have a flair for words and a knack for
+          stringing them together. My passion is in helping others realize their
+          vision. Through collaboration and craft, I give voice to my client’s
+          vision. On rainy days, you can find me sipping coffee in bed, and on
+          sunny days, sitting on my back porch in the company of my pets. I’m an
+          avid bird watcher and a collector of interests. I like to spend my
+          free time un-busily and invest in myself by exercising and spending
+          quality time with the people I love.
+        </p>
+      </div>
+    </section>
+    <!-- <section class="wavy sectional">
+      <div class="wrapper">
+        <h2 class="section-title">Reach Out</h2>
+        <p>
+          Your success is my success. I help my clients capture their vision and
+          share it through compelling content. With guidance and collaboration-
+          together- your ideas can become influential. Have I piqued your
+          interest yet? Go ahead and give that Contact Me button a click.
+
+          I work with businesses, individuals, and authors to better express
+          themselves and guide them through the wild world of storytelling.
+          Through collaboration, my clients realize and capture their vision.
+          Understanding their goal and giving voice to their purpose is what
+          makes me successful.
+
+          Want to learn more about how my services can get you closer to your
+          goals? Reach out!
+        </p>
+      </div>
+    </section> -->
+
+    <!-- <div style="background: #091727; height: 80px"></div> -->
+
+    <div
+      class="container-fluid mt-5 text text-center carousel-border text-shadow"
+    >
+      <h2 class="testimonials-title d-none d-lg-block">Testimonials</h2>
+      <!-- <h5 class="testimonials-subtitle">See what my clients have to say</h5> -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide d-none d-lg-block"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <div class="carousel-card">
+                <div class="card-body">
+                  <h3 class="card-title">Mary Linus</h3>
+                  <h6 class="card-text">
+                    <i class="fas fa-quote-left quote-icon-top"></i>
+                    <i class="fas fa-quote-right quote-icon-bottom"></i>
+                    <!-- Some quick example text to build on the card title and
+                      make up the bulk of the card's content. Some quick example
+                      text to build on the card title and make up the bulk of
+                      the card's content. -->
+                    I am delighted to provide a testimonial for Laura-Ray who
+                    recently served as a beta reader for my manuscript. She
+                    demonstrated a full understanding of the subject matter
+                    which was evident in her insightful comment and suggestions.
+                    Her expertise and genuine commitment to helping me improve
+                    my manuscript have been invaluable to me, and I am confident
+                    her skills and dedication will continue to benefit many
+                    authors
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="carousel-card">
+                <div class="card-body">
+                  <h3 class="card-title">Anonymous</h3>
+                  <h6 class="card-text">
+                    <i class="fas fa-quote-left quote-icon-top"></i>
+                    <i class="fas fa-quote-right quote-icon-bottom"></i>
+                    Laura Ray has been ghostwriting informative and concise
+                    blogs for my financial firm. She has a unique ability to
+                    take complex information and make it comprehensible for the
+                    average reader.
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="carousel-card">
+                <div class="card-body">
+                  <h3 class="card-title">Juliana at Luvballoons</h3>
+                  <h6 class="card-text">
+                    <i class="fas fa-quote-left quote-icon-top"></i>
+                    <i class="fas fa-quote-right quote-icon-bottom"></i>
+                    My experience working with Laura has been phenomenal. I
+                    recently launched my balloon and decor business, and being
+                    able to have a reliable source to write posts for engagement
+                    and product descriptions has been invaluable. Every
+                    submission she provided was timely and effectively met my
+                    brand and goal. Laura was able to add and adjust language
+                    and verbiage to meet every thematic balloon design that was
+                    sent her way. I happily recommend her writing services to
+                    anyone who needs a fresh, new voice and perspective to
+                    elevate their brand.
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+          <i class="fa fa-arrow-left"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+          <i class="fa fa-arrow-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- End Testimonial -->
+    <section id="light-blue">
+      <div id="portfolio"></div>
+      <div style="background: #122f4f; height: 60px"></div>
+
+      <!-- Divider Section -->
+      <!-- Portfolio Section -->
+      <div class="container text-shadow">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 mx-auto">
+            <h2
+              class="text-center text-shadow"
+              style="text-transform: uppercase"
+            >
+              Download my writing samples
+            </h2>
+            <h5 class="text-center text-shadow">
+              <!-- I use my craft to help people realize their vision and better
+              express themselves. Many business owners and individuals either
+              lack the time or the inspiration needed to craft unique copy and
+              content- that's where I come in! Through collaboration, we can
+              create memorable and moving stories for your audience. -->
+              I work with businesses, individuals, and authors, guiding them
+              through the wild world of storytelling. My portfolio consists of
+              some of my most successful pieces, along with an excitedly growing
+              section of published work.
+            </h5>
+          </div>
+          <div class="col-md-6 portfolio-card mx-auto">
+            <i id="ribbon"></i>
+            <h4 class="text-shadow">My Portfolio</h4>
+            <div
+              class="d-flex flex-column justify-content-center align-items-center"
+            >
+              <!-- <p>Download my portfolio</p> -->
+              <a
+                href="./files/LauraRayReadPortfolio.pdf"
+                download="Laura-Ray-Portfolio.pdf"
+              >
+                <button
+                  class="btn btn-float fa fa-download"
+                  id="portfolio-btn"
+                ></button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="websiteModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content websiteModal">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  src="images/Calebheadshots-10-small.jpg"
+                  class="img-fluid"
+                  alt="Caleb Ray"
+                />
+              </div>
+              <div class="col-md-8">
+                <h5>Caleb Ray</h5>
+                <p>205-792-5766</p>
+                <p>
+                  If you're looking for a website of your own just give me a
+                  call! Please leave a message if I'm unable to answer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row icon-row flex-sm-column flex-md-row">
+          <div class="col-sm-4">
+            <h3 class="footer-title">Laura Ray</h3>
+            <p>© 2023 Laura Ray</p>
+          </div>
+          <div class="col-sm-4 text-center">
+            <div class="social-media-icons">
+              <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+              <a
+                href="https://www.linkedin.com/in/laura-ray-read-53b978116/"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-sm-4 foot-btn">
+            <a
+              href="#"
+              class="buy-website-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#websiteModal"
+              >Buy a Website</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="js/email.js"></script>
+    <!-- <script>
+      var navbarItems = document.querySelectorAll(".nav-item .nav-link");
+
+      for (var i = 0; i < navbarItems.length; i++) {
+        navbarItems[i].addEventListener("click", function () {
+          for (var j = 0; j < navbarItems.length; j++) {
+            navbarItems[j].classList.remove("active");
+          }
+
+          this.classList.add("active");
+        });
+      }
+    </script> -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("lQRutstpLLAzZ_4d5");
+      })();
+    </script>
+    <script>
+      window.onscroll = function () {
+        var threshold = 100; // Adjust as needed
+        var navTexts = document.querySelectorAll(".navbar .text");
+        var navIcons = document.querySelectorAll(".navbar .icon");
+
+        if (window.pageYOffset > threshold) {
+          for (var i = 0; i < navTexts.length; i++) {
+            navTexts[i].style.display = "none";
+            navIcons[i].style.display = "inline";
+          }
+        } else {
+          for (var i = 0; i < navTexts.length; i++) {
+            navTexts[i].style.display = "inline";
+            navIcons[i].style.display = "none";
+          }
+        }
+      };
+    </script>
+    <!-- <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("SVsuSb3kDlKIHHk-S");
+      })();
+    </script> -->
+    <script>
+      // Get a reference to the navbar links
+      const links = document.querySelectorAll("#navbar a");
+
+      // Options for the IntersectionObserver
+      const options = {
+        rootMargin: "-50% 0px", // This means the callback will run when 50% of the section is visible
+        threshold: 0.01,
+      };
+
+      // Callback for the IntersectionObserver
+      const callback = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Remove 'active' class from all links
+            links.forEach((link) => link.classList.remove("active"));
+
+            // Add 'active' class to the link that corresponds to the current section
+            const activeLink = document.querySelector(
+              `#navbar a[href="#${entry.target.id}"]`
+            );
+            activeLink.classList.add("active");
+          }
+        });
+      };
+
+      // Create the IntersectionObserver
+      const observer = new IntersectionObserver(callback, options);
+
+      // Observe each section
+      document.querySelectorAll("section").forEach((section) => {
+        observer.observe(section);
+      });
+    </script>
+  </body>
+</html>
